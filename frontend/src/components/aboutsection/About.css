@@ -1,0 +1,158 @@
+.about{
+    margin: 50px auto 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    
+}
+
+.about-left{
+    flex-basis: 40%; /*the item will use 40% space in the parent container*/
+    position: relative; /*just as what was explain in .caption (parent)*/
+}
+
+.about-right{
+    flex-basis: 56%; /*the item will use 56% space in the parent container while the remaining 4% will be the gap between them*/
+}
+
+.about-img{
+    width: 100%;
+    height: 100%;
+    height: 20rem;
+    position: relative;
+    
+}
+
+.playIcon{
+    width : 60px;
+    position: absolute ; /*just like how it was explain in .caption (child)*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.playIcon:hover{
+    opacity: 0.8;
+}
+
+
+/* .about h3, p, h1{ /*making all the element come together with no space
+   padding: 0;
+   margin: 0;
+
+} */
+
+.about h1{
+    font-weight: 600
+}
+
+.about h3{
+    margin: 10px 0;
+    max-width: 400px;
+    color:#072474;
+}
+
+.about p{
+    color: #676767;
+    margin-bottom: 15px;
+}
+
+.img-slider{
+    margin-top: 60px;
+    height: 100%;
+    max-width: 50%;
+    position: relative;
+    border-radius: 5%;
+    display: flex;
+    flex: 1;
+
+    
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+   
+    /* position: relative; */
+}
+
+
+.slides{
+    /* position: absolute; */ 
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    position: relative;
+    
+    
+}
+
+.slide-img{
+    width: 100%;
+    height: 100%;
+     
+}
+
+.slide-img .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px 100px 14px 14px;
+    
+}
+
+.about-img .shift-icons{
+    width: 35px;
+    cursor: pointer;
+}
+
+.slider-btn{
+    position: absolute;
+    display: flex;
+    gap: 6px;
+    top: 88%;
+    left: 75%;
+}
+
+.slides .title{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    max-width: 600px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+@media (max-width:800px) {
+    .about{
+        flex-direction: column;
+    }
+    .about .about-img{
+        width: 330px;
+        
+    }
+    .about-left{
+        flex-basis: 100%;
+        margin: 25px;
+        order: 2;
+    }
+    .about-right{
+        flex-basis: 100%;
+    }
+}

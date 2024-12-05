@@ -1,0 +1,162 @@
+.video{
+    padding-block: 0;
+    margin-block-end: -250px;
+}
+
+.video-card{
+    background-color: lightgray;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 3%;
+    position: relative;
+    box-shadow: rgba(224, 222, 222, 0.35) 0px 5px 15px;
+}
+
+.video-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(41, 39, 39, 0.3);
+    z-index: 4;
+}
+
+.video-card .card-title{
+    color: rgb(30, 29, 29);
+    font-size: 29px;
+    z-index: 3;
+}
+
+.play-icon{
+    width: 45px;
+    margin-block: 25px 35px;
+    cursor: pointer;
+    animation: pulse 3s ease infinite;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgb(18, 18, 18)  ;
+    }
+
+    100% {
+        box-shadow: 0 0 0 40px transparent ;
+    }
+}
+
+
+
+.btn-link{
+    text-decoration: none;
+    color: black;
+    z-index: 3;
+}
+
+.btn-link:hover{
+    transform: scale(1.10);
+}
+
+
+/* CLASS CSS.. */
+.classes{
+    margin: 0 3%;
+    border-radius: 4%;
+    
+    
+}
+.mistake{
+    /* This will make the .class section overlap by 250px */
+    padding-block-start: 250px; /* Adjust padding-top if needed */
+   
+}
+
+.classes .section-subtitle{
+    margin-inline: auto;
+}
+
+li{
+    list-style: none;
+    margin: 0 auto;
+}
+
+.class-card{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 4%;
+    margin: 0 17px;
+    height: 100%;
+    overflow: hidden;  
+}
+
+.class-card .card-banner img{
+    transition: 0.5s ease;
+}
+
+.class-card:is(:hover, :focus-within) .card-banner img{
+    transform: scale(1.1);
+}
+
+.class-card .card-content {
+    padding: 24px;
+}
+
+.class-card .title-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.class-card .title-icon{
+    min-width: max-content;
+}
+
+.class-card .card-title{
+    transition: 0.5s ease;
+    text-decoration: none;
+
+}
+
+.class-card .card-title:is(:hover, :focus){
+    color: black;
+}
+
+.class-card .card-text{
+    color: rgb(67, 65, 65);
+    font-size: 16px;
+    margin-bottom: 10px;
+
+
+}
+
+.class-card .progress-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+
+.class-card .progress-bg{
+    background-color: aqua;
+    border-radius: 50px;
+
+}
+
+.class-card .progress-bar{
+    background-color: aquamarine;
+    height: 10px;
+    border-radius: inherit;
+}
