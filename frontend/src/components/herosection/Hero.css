@@ -1,120 +1,65 @@
-.hero-section{
-    height: 95vh; /*taking the entire height row of the screen*/
-    max-height: 1100px; /*that the hero section height will not pass 1100px despite the screen*/
-    position: relative;
-    overflow: hidden;
-    border-radius: 0 0 5% 5%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-
-} 
-
-.hero-container{
+.hero-container {
+    display: flex;
+    min-height: 100vh;
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+  }
   
-
-}
-
-.hero-info{
-    flex: 1; /* Take up available space */
-    max-width: 50%; /* Limit width to half of the container */
-    padding-right: 20px;
-    margin-top: 40px;
-    color: rgb(5, 99, 5)
-} 
-
-.hero-info .intro-header{
-    font-size: max(2.5vw, 20px);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    max-width: 600px;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 0px rgba(225, 225, 232, 0.5), /* Light shadow */
-                 2px 2px 2px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
-}
-
-.hero-info h3{
-    font-size: max(1.5vw, 15px);
-    font-weight: 600;
-    margin-bottom: 10px;
-    text-shadow: 0 0 5px #fff,   /* Primary glow */
-    0 0 10px #fff,  /* Second layer of glow */
-    0 0 15px bisque,  /* Blue glow */
-    0 0 20px rgb(35, 226, 83), 
-    0 0 25px rgb(59, 223, 108), 
-    0 0 30px rgb(221, 236, 236),  /* Aqua glow */
-    0 0 35px rgb(212, 223, 223);
-}
-
-.hero-info .para{
-    color: white;
-    font-size: max(1.3vw, 9px);
-    margin-bottom: 10px;
-    text-shadow: 0 0 5px #fff,   /* Primary glow */
-    0 0 0px #fff,  /* Second layer of glow */
-    0 0 10px rgb(222, 222, 237),  /* Blue glow */
-    0 0 10px rgb(10, 10, 11), 
-    0 0 10px rgb(221, 221, 232), 
-    0 0 30px rgb(11, 11, 11),  /* Aqua glow */
-    0 0 35px rgb(227, 235, 235);
-}
-
-.hero-details{
-    width: max-content;
-    margin-bottom: 5px;
-}
-
-.intro-text{
-    color: white;
+  .hero-content {
+    width: 50%;
+    padding: 4rem;
     display: flex;
-    column-gap: 8px;
-    font-size: max(0.9vw, 9px);
-    background-color: rgb(54, 52, 52);
-    border-radius: 10px;
-   
-}
-
-.intro-text p{
-    padding: 5px;
-    
-}
-
-.intro-text p:first-child{
-    background: rgb(239, 182, 113);
-    box-shadow: rgb(239, 182, 113) 0px 5px 15px;
-    border-radius: 10px;
-    margin: 1px;
-}
-
-.intro-btn{
-    background: rgb(239, 182, 113);
-    box-shadow: rgb(25, 25, 63) 0px 5px 15px;
-    color: whitesmoke;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    margin-top: 15px;
-    border: 0;
-    outline: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .hero-cta {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-cta:hover {
+    background-color: #0056b3;
+  }
+  
+  .hero-cta .arrow {
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .hero-image {
+    width: 50%;
+  }
 
-.intro-btn:hover{
-    transform: scale(1.05);
-    background-color: aliceblue;
-    color: black;
-}
+  .hero-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+  }
 
-.social-container{
+  .social-container{
     display: flex;
     gap: 10px;
     margin-top: 20px;
@@ -156,81 +101,33 @@
 }
 
 
-@media screen and (max-width: 768px) {
-    .hero-section {
-        height: auto; /* Allow height to adjust based on content */
-        min-height: 90vh; /* Ensure it takes at least the full viewport height */
-        padding-bottom: 60px;
-    }
-
+  /* Responsive Design */
+  @media (max-width: 768px) {
     .hero-container {
-        flex-direction: column; /* Stack elements vertically */
-        padding: 20px; /* Add some padding */
+      margin-top: 40px;
+      flex-direction: column;
     }
-
-    .hero-info {
-        max-width: 90%; /* Full width on mobile */
-        padding: 0; /* Remove padding */
-        margin-top: 80px;
-        text-align: center; /* Center align text */
-        margin-bottom: 40px; 
+  
+    .hero-content,
+    .hero-image {
+      width: 100%;
     }
-
-    .hero-details {
-        width: 100%; /* Full width */
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center align items */
+  
+    .hero-content {
+      padding: 2rem;
     }
-
-    .intro-text{
-        flex-wrap: wrap; /* Allow wrapping for smaller screens */
-        justify-content: center; /* Center the wrapped items */
-        margin-bottom: 10px;
-        
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
     }
-
-    .intro-text p{
-        font-size: 10px;
-    }
-
-    .directories {
-        position: absolute;
-        bottom: 20px; /* Adjust this value to control space from the bottom */
-        left: 0;
-        right: 0;
-        width: 100%;
-        padding: 10px 0;
-        
-    }
-
-    .intro-btn {
-        padding: 10px 16px; /* Slightly smaller padding */
-        font-size: 14px; /* Smaller font size */
-        margin-bottom: -10px;
-        
+  
+    .hero-content p {
+      font-size: 1rem;
     }
 
     .social-container {
         justify-content: center; /* Center social icons */
         margin-bottom: 80px;
     }
-}
-
-@media screen and (max-width: 480px) {
-    .hero-info .intro-header {
-        font-size: 20px; /* Even smaller font size for very small screens */
-    }
-
-    .hero-info h3 {
-        font-size: 16px;
-    }
-
-    .hero-info .para {
-        font-size: 14px;
-    }
-
-    .intro-text {
-        font-size: 12px;
-    }
-}
+      
+  }

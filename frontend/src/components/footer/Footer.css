@@ -17,6 +17,16 @@
     gap: 80px
 
 }
+.footer-content-left img{
+    width: 70px;
+}
+
+.logo-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
 .footer-content-left, .footer-content-center, .footer-content-right{
     display: flex;

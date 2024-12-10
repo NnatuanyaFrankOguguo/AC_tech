@@ -4,6 +4,9 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/herosection/Hero'
 import Footer from './components/footer/footer';
+import Contact from './components/contactus/Contact';
+import Testimonial from './components/testimonial/Testimonial';
+
 
 // import Home from './pages/homepage/Home';
 
@@ -17,6 +20,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             
         </Routes> */}
+        <Testimonial />
+        <Contact />
         <Footer />
         
     </div>

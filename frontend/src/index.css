@@ -90,6 +90,20 @@
   width: 30%
 }
 
+.title{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 70px 0 30px;
+  color:#072474;
+}
+
+.title h3{
+  font-size: 2.1rem;
+  color: black;  
+  font-weight: 600;
+}
+
 /* -------------------------- */
 @media (max-width: 1200px){
   .maincontainer{

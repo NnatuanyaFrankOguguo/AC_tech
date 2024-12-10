@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import wrench from '../../images/hero-Image/wrench.png'
 import facebook from '../../images/hero-Image/facebook.png'
 import whatsapp from '../../images/hero-Image/whatsapp.png'
 import instagram from '../../images/hero-Image/instagram.png'
@@ -11,7 +12,10 @@ const Footer = () => {
         <div className="footer-content">
 
             <div className="footer-content-left">
-                {/* <img src={assets.logo} alt="" /> */}
+                <div className='logo-content'>
+                    <img src={wrench} alt="" /><span><strong>S A Dairo Cooling & Electrical Services</strong></span>
+                </div>
+                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ducimus, consectetur aut possimus excepturi exercitationem vero tenetur quidem beatae, voluptas, nemo blanditiis similique!</p>
                 <div className="footer-social-icons">
                     <img src={facebook} alt="facebook" />
@@ -41,7 +45,7 @@ const Footer = () => {
 
         </div>
         <hr/>
-        <p className="footer-copyright">Copyright 2024 © Tomato.com - All Right Reserved</p>
+        <p className="footer-copyright">Copyright 2024 © S A Cooling Services.com - All Right Reserved</p>
     </div>
   )
 }

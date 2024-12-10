@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import arm_muscle from './arm_muscle.png'
-import lifting from './lifting.png'
-import logoss from './logoss.jpg'
 import menu from './menu.png'
+import wrench from '../../images/hero-Image/wrench.png'
 import './Navbar.css'
 
 
@@ -32,12 +30,12 @@ const Navbar = () => {
   return (
     <nav className={`maincontainer ${sticky ? 'white-nav' : '' }`}>
         <div className='logos'>
-            <img className='logoss' src={logoss} alt="" />
+            <img className='logoss' src={wrench} alt="logo" /><span>S A Dairo Cooling Services</span>
         </div>
         <ul className={` ${mobilemenu ? '' : 'hide-mobile-menu'} `}>
             <li>Home</li>
             <li>About Us</li>
-            <li>Prices</li>
+            <li>Services</li>
             <li>Testimonials</li>
             <li><button className='btn'>Contact Us</button></li>
         </ul>

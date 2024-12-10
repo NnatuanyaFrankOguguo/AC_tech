@@ -1,10 +1,11 @@
 /*Styling the CONTACT SECTION*/
 .contact{
-    margin: 70px auto;
+    margin: 60px auto;
     max-width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10%;
 
 }
 
@@ -66,7 +67,7 @@
 .contactCol span{
     display: block;
     margin : 20px 0;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 @media (max-width:700px){
