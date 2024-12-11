@@ -6,8 +6,7 @@ import facebook from '../../images/hero-Image/facebook.png'
 import tiktok from '../../images/hero-Image/tiktok.png'
 import instagram from '../../images/hero-Image/instagram.png'
 import whatsapp from '../../images/hero-Image/whatsapp.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 
 const Hero = () => {
 

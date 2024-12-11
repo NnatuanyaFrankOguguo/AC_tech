@@ -107,8 +107,14 @@
     object-fit: cover;
     object-position: center;
     border-radius: 14px 100px 14px 14px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.5; /* Placeholder slightly visible */
     
 }
+
+.image:not([data-src]) {
+    opacity: 1; /* Fully visible after loading */
+  }
 
 .about-img .shift-icons{
     width: 35px;

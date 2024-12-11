@@ -62,7 +62,7 @@ nav ul li {
 }
 
 .menu-icon{
-    width: 40px;
+    width: 30px;
     display: none;
 }
 
@@ -83,6 +83,12 @@ nav ul li {
     nav{
         padding: 15px 0;  
     }
+
+    .logoss{
+        width : 35px;
+         
+    }
+
     nav ul{
         position: fixed;
         top: 0;

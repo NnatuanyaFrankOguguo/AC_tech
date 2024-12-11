@@ -6,6 +6,8 @@ import Hero from './components/herosection/Hero'
 import Footer from './components/footer/footer';
 import Contact from './components/contactus/Contact';
 import Testimonial from './components/testimonial/Testimonial';
+import About from './components/aboutsection/About';
+import Counter from './components/counter/Counter';
 
 
 // import Home from './pages/homepage/Home';
@@ -20,6 +22,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             
         </Routes> */}
+        <Counter/>
+        <About />
         <Testimonial />
         <Contact />
         <Footer />

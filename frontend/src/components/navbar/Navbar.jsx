@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { Link} from 'react-scroll';
 import menu from './menu.png'
 import wrench from '../../images/hero-Image/wrench.png'
 import './Navbar.css'
@@ -33,11 +34,11 @@ const Navbar = () => {
             <img className='logoss' src={wrench} alt="logo" /><span>S A Dairo Cooling Services</span>
         </div>
         <ul className={` ${mobilemenu ? '' : 'hide-mobile-menu'} `}>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Testimonials</li>
-            <li><button className='btn'>Contact Us</button></li>
+            <Link to='#'><li>Home</li></Link>
+            <Link to='about' smooth={true} offset={-160} duration={500}><li>About Us</li></Link>
+            <Link to='#'><li>Services</li></Link>
+            <Link to='testimonial'  smooth={true} offset={-150} duration={500}><li>Testimonials</li></Link>
+            <Link to='contact'  smooth={true} offset={-220} duration={500}><li><button className='btn'>Contact Us</button></li></Link>
         </ul>
         <img onClick={toggleMenu} src={menu} alt="" className='menu-icon '/>
     </nav>

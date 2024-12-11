@@ -48,7 +48,7 @@ const Contact = () => {
     and in the right column we will display one contact form where user can submit the name, phone number and message 
     and that message will be sent to admin email ID */}
 
-        <div className="contactCol">
+        <div className="contactCol" id="contact">
           <h4>
             Send us a Message <img src={mail} alt="email-icon" />
           </h4>

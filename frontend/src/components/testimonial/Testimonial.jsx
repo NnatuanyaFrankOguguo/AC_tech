@@ -38,7 +38,7 @@ const Testimonial = () => {
 
 
   return (
-    <>
+    <div id='testimonial'>
         <div className='title'>
             <p>Testimonials</p>
             <h3>Reviews from our Satisfied Guests</h3>
@@ -121,7 +121,7 @@ const Testimonial = () => {
             </div>
             
         </div>
-    </>
+    </div>
    
   )
 }

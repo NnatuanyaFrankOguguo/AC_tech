@@ -1,31 +1,39 @@
-import slider_1 from './slider_1.jpg'
-import slider_2 from './slider_2.jpg' 
-import slider_3 from './slider_3.jpg' 
-import slider_4 from './slider_4.jpg' 
+import AC_img1 from './AC_img1.jpg'
+import AC_img3 from './AC_img3.jpg'
+import AC_img4 from './AC_img4.jpg' 
+import AC_img5 from './AC_img5.jpg'
+import AC_img1_small from './AC_img1_small.jpg'
+import AC_img3_small from './AC_img3_small.jpg'
+import AC_img4_small from './AC_img4_small.jpg'
+import AC_img5_small from './AC_img5_small.jpg'
+
 
 
 const sliderData = [
     {
-        title : "Luxury Homes",
-        image : slider_1,
-        alt: 'weight'
+        title : "We Fix/Repair",
+        image : AC_img1,
+        image_small : AC_img1_small,
+        alt: 'Air Conditioning'
     },
     {
-        title : "Property/Land Sales",
-        image : slider_2,
-        alt: 'weight'
+        title : "We Install",
+        image : AC_img3,
+        image_small : AC_img3_small,
+        alt: 'Air Conditioning'
     },
     {
-        title : "We Build & Construct",
-        image : slider_3,
-        alt: 'weight'
+        title : "We Buy and We Sell",
+        image : AC_img4,
+        image_small : AC_img4_small,
+        alt: 'Air Conditioning'
     },
     {
-        title : "Our Real Estate Across Nigeria",
-        image : slider_4,
-        alt: 'weight'
+        title : "And Many More",
+        image : AC_img5,
+        image_small : AC_img5_small,
+        alt: 'Air Conditioning'
     },
-   
   
 ]
 
