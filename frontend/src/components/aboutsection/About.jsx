@@ -48,7 +48,7 @@ const About = () => {
       setCurrent(current => (current === sliderData.length - 1 ? 0 : current + 1))
     }
 
-    timeout.current = setInterval(nextSlide, 5000)
+    timeout.current = setInterval(nextSlide, 7000)
 
     return function () {
       if(timeout.current){
@@ -126,15 +126,16 @@ const About = () => {
       </div>
 
       <div className="about-right">
-        <h1>ABOUT OGRAL</h1>
+        <h1>ABOUT US</h1>
         <h3>Our Commitment to You</h3>
-        <p>
-        Welcome to Ogral, where we bring your real estate dreams to life. With a commitment to excellence and a passion for innovation, we have built a reputation as a trusted name in the real estate industry, helping clients find not just properties, but homes that suit their unique needs and aspirations.
-        </p>
+
 
         <div>
-          <button className="intro-btn">Learn more...</button>
+          <p>Founded in 2005, S A Dairo Cooling & Electrical Services began as a small family-owned business with a simple mission: to provide reliable, high-quality AC services to our community. What started in a small garage has now grown into a trusted local enterprise with a team of certified professionals.</p>
+          <br></br>
+          <p>We believe in transparency, integrity, and customer satisfaction. Every technician is carefully trained, background-checked, and committed to delivering exceptional service that exceeds your expectations.</p>
         </div>
+
       </div>
     </div>
   );

@@ -27,8 +27,9 @@ nav{
 
 .logos span{
     margin-left: 10px;
-    color: #0a1626;
+    color: #d6dbe2;
     max-width: 120px;
+    font-size: 14px;
 }
 
 /* nav ul{
@@ -44,6 +45,7 @@ nav ul li {
     font-weight: 500;
     text-shadow: 1px 1px 0px rgba(225, 225, 232, 0.5), /* Light shadow */
                  2px 2px 2px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    cursor: pointer;
 }
 
 .btn{
@@ -54,10 +56,11 @@ nav ul li {
     border-radius: 30px;
     border: 0;
     outline: 0;
+    cursor: pointer;
 }
 
 .white-nav{
-    background: rgb(35, 35, 36);
+    background: #3b536b;
     color: white;
 }
 
@@ -89,12 +92,16 @@ nav ul li {
          
     }
 
+    .logos span{
+        font-size: smaller;
+    }
+
     nav ul{
         position: fixed;
         top: 0;
         right: 0; /*changing the px of the right side bar to -280px is what will make it disappear from the screen but we will do that dynamically when the button is click the menu button*/
         bottom: 0;
-        background: #21a05a;
+        background: #15253a;
         z-index: -1;
         width: 250px;
         padding-top: 70px;

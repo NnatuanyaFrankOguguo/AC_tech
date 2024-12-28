@@ -31,12 +31,12 @@ const Navbar = () => {
   return (
     <nav className={`maincontainer ${sticky ? 'white-nav' : '' }`}>
         <div className='logos'>
-            <img className='logoss' src={wrench} alt="logo" /><span>S A Dairo Cooling Services</span>
+            <img className='logoss' src={wrench} alt="logo" /><span>S A Dairo Cooling & Electrical Services</span>
         </div>
         <ul className={` ${mobilemenu ? '' : 'hide-mobile-menu'} `}>
-            <Link to='#'><li>Home</li></Link>
+            <Link to='home' smooth={true} offset={-160} duration={500}><li>Home</li></Link>
             <Link to='about' smooth={true} offset={-160} duration={500}><li>About Us</li></Link>
-            <Link to='#'><li>Services</li></Link>
+            <Link to='service' smooth={true} offset={-160} duration={500} ><li>Services</li></Link>
             <Link to='testimonial'  smooth={true} offset={-150} duration={500}><li>Testimonials</li></Link>
             <Link to='contact'  smooth={true} offset={-220} duration={500}><li><button className='btn'>Contact Us</button></li></Link>
         </ul>

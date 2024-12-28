@@ -8,6 +8,7 @@ import Contact from './components/contactus/Contact';
 import Testimonial from './components/testimonial/Testimonial';
 import About from './components/aboutsection/About';
 import Counter from './components/counter/Counter';
+import Service from './components/service/Service';
 
 
 // import Home from './pages/homepage/Home';
@@ -24,6 +25,7 @@ const App = () => {
         </Routes> */}
         <Counter/>
         <About />
+        <Service />
         <Testimonial />
         <Contact />
         <Footer />

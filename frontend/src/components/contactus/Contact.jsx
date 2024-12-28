@@ -52,24 +52,24 @@ const Contact = () => {
           <h4>
             Send us a Message <img src={mail} alt="email-icon" />
           </h4>
-          <p>
+          <p className="contact-text">
             Feel Free to reach out through our contact form or find our contact
             information below. your feedback, question, and suggestions are
             important to us as we strive to provide exceptional service to our
             hospitality community.
           </p>
-          <ul>
+          <ul className="contact-info">
             <li>
               <img src={email} alt="email-icon" />
-              Contact@codeblooded.dev
+              dairos@ymail.com
             </li>
             <li>
               <img src={phone} alt="phone-icon" />
               +234 (0) 70700 18654
             </li>
-            <li>
+            <li className="address">
               <img src={location} alt="loaction-icon" />
-              No.7 fifth Avenue, Independent Layout <br /> MA 02139, Canada
+              Local Government Area, 14,Olayinka street, Onigbongbo <br /> Opebi, Ikeja 100001, Lagos
             </li>
           </ul>
         </div>

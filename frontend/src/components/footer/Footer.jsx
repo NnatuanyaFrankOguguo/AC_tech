@@ -16,7 +16,7 @@ const Footer = () => {
                     <img src={wrench} alt="" /><span><strong>S A Dairo Cooling & Electrical Services</strong></span>
                 </div>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ducimus, consectetur aut possimus excepturi exercitationem vero tenetur quidem beatae, voluptas, nemo blanditiis similique!</p>
+                <p>Keeping Lagos cool since 2005. S A Dairo Cooling Services is your trusted partner for all air conditioning and electrical needs. We pride ourselves on prompt service, expert technicians, and customer satisfaction.</p>
                 <div className="footer-social-icons">
                     <img src={facebook} alt="facebook" />
                     <img src={whatsapp} alt="whatsapp" />
@@ -38,8 +38,8 @@ const Footer = () => {
             <div className="footer-content-right">
                 <h2>GET IN TOUCH</h2>
                 <ul>
-                    <li>+234 (0)70 7001 8654</li>
-                    <li>contact@tomato.com</li>
+                    <li>+234 (0)818 324 1932</li>
+                    <li>dairos@ymail.com</li>
                 </ul>
             </div>
 

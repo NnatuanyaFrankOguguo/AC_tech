@@ -28,6 +28,17 @@
     gap: 15px;
 }
 
+.footer-content-left p{
+    font-size: 1.1rem;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: start;
+    width: 80%;
+
+}
+
 .footer-content-left, .footer-content-center, .footer-content-right{
     display: flex;
     flex-direction: column;

@@ -3,7 +3,7 @@
     margin : 80px auto;
     padding: 0 80px;
     position: relative;
-    padding: 0 10%;
+    padding: 0 10%; 
 }
 
 .nextBtn, .backBtn{
@@ -32,21 +32,23 @@
 
 .slider{
     overflow: hidden; /* hides/cut children element that have pass the width*/
+    position: relative; /* Necessary for managing the sliding effect */
 
 }
 
 .slider ul{
     display : flex;
     width : 200%; /*in accordance to the parent width we made this 200% so that it will take the remaining two pass the parent width to be hidden bcos of the overflow hidden*/
-    overflow-x: hidden; /*CSS property is used to hide any content that overflows horizontally beyond the width of its container*/
-    transition: 0.5s;
-    transform: translateX();
+    overflow-x: hidden; /*CSS property is used to hide any content that overflows horizontally beyond the width of its container */
+    transition: transform 0.5s ease-in-out;
+    
 }
 
 .slider ul li{
     list-style: none;
     width: 50%; /*here we make the lists(li) width 50% because there are 4 multiply accordingly will make up the parent element width of 200%*/
     padding: 15px;
+    
 }
 
 .slide p{
@@ -58,7 +60,7 @@
     padding: 30px;
     border-radius: 10px;
     color: #676767;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 .slide img{
@@ -74,26 +76,31 @@
     margin-left: 15px;
     align-items: center;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .userInfo h6{
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     color : #072474;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 @media (max-width:800px){
     .testimonials{
-        padding: 0 40px
+        padding: 0 30px
     }
     .nextBtn, .backBtn{
         padding: 10px;
-        width: 45px;
+        width: 50px;
     }
     .nextBtn:hover, .backBtn:hover{
-        width: 30px
+        width: 35px
+    }
+
+    .slider ul li {
+        padding: 8px; /* Reduced padding for compact layout */
+       
     }
     
     .testimonials ul li{
@@ -101,7 +108,7 @@
     }
 
     .slide{
-        padding: 10px;
+        padding: 15px;
     }
     
     .slide img{
@@ -113,8 +120,18 @@
 @media (max-width:600px){
     .userInfo{
         display: block;
-        margin-bottom: 10px;
-        font-size: 12px;
+        margin-bottom: 8px;
+        font-size: 11px;
+    }
+
+    .slider ul {
+        width: 400%;
+        transform: translateX(100);
+    }
+
+    .slider ul li {
+        padding: 5px;
+        width: 50%;
     }
 
     .slider p{
